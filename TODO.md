@@ -1,12 +1,11 @@
-# Personal Portfolio Website TODO
+# TODO: Navbar Scroll Background Color Feature (COMPLETED ✅)
 
-## Current Task: Update external live link for Project Three to https://qms-navy-three.vercel.app/
+## Steps Completed:
+- [x] 1. Create TODO.md with plan breakdown
+- [x] 2. Edit styles.css: Added CSS variables, updated .header/.scrolled states, text contrast
+- [x] 3. Verified script.js scroll listener (no changes needed)
+- [x] 4. Tested feature
+- [x] 5. Task completed
 
-### Breakdown Steps:
-- [x] 1. Create/Update TODO.md with plan steps
-- [x] 2. Edit index.html - Update live demo link in third project card to https://qms-navy-three.vercel.app/
-- [x] 3. Update TODO.md to mark steps complete
-- [x] 4. Preview changes in browser
-- [x] 5. Attempt task completion
+**Feature Summary:** Navbar changes from transparent glass to solid customizable color on scroll.
 
-**Task completed: External live link for Project Three updated to https://qms-navy-three.vercel.app/**
