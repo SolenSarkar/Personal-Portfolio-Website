@@ -1,11 +1,8 @@
-# TODO: Navbar Scroll Background Color Feature (COMPLETED ✅)
+# Task: Fix contact heading disappearing in dark mode
 
-## Steps Completed:
-- [x] 1. Create TODO.md with plan breakdown
-- [x] 2. Edit styles.css: Added CSS variables, updated .header/.scrolled states, text contrast
-- [x] 3. Verified script.js scroll listener (no changes needed)
-- [x] 4. Tested feature
-- [x] 5. Task completed
-
-**Feature Summary:** Navbar changes from transparent glass to solid customizable color on scroll.
+## Steps:
+- [x] Step 1: Update styles.css with forced visibility and contrast for .contact .section-title in dark mode
+- [x] Step 2: Add CSS var support for contact gradient backgrounds
+- [x] Step 3: Test dark mode toggle and scroll to contact section
+- [x] Step 4: Update TODO.md progress and complete task
 
