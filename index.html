@@ -10,28 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Header -->
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
             <div class="logo">Solen Sarkar</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <button id="theme-toggle" title="Toggle theme" aria-label="Toggle light/dark mode">
-                <i class="fas fa-moon"></i>
-            </button>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                <li role="none">
+                    <button id="theme-toggle" title="Toggle theme" aria-label="Toggle light/dark mode" aria-pressed="false">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                </li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </nav>
     </header>
 
-    <!-- Hero / Home Section -->
+<!-- Hero / Home Section -->
+    <main id="main-content">
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="hero-title animate-on-scroll">Hi, I'm  <span class="highlight">Solen Sarkar</span></h1>
@@ -109,16 +115,19 @@
         <div class="container">
             <h2 class="section-title animate-on-scroll">Get In Touch</h2>
                 <form class="contact-form animate-on-scroll" id="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+<div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required aria-required="true">
                     <span class="error-message" id="name-error"></span>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required aria-required="true">
                     <span class="error-message" id="email-error"></span>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" placeholder="Enter your message" rows="5" required aria-required="true"></textarea>
                     <span class="error-message" id="message-error"></span>
                 </div>
                 <div class="form-actions">
@@ -130,7 +139,8 @@
                 <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
             </div>
         </div>
-    </section>
+</section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
