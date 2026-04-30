@@ -1,0 +1,9 @@
+# Robots.txt for SEO
+User-agent: *
+Allow: /
+
+# Disallow admin or private pages (if any)
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://solen-sarkar.vercel.app/sitemap.xml
